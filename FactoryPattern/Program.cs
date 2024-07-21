@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var vehicle = VehicleFactory.GetVehicle();
+            if (vehicle != null ) vehicle.Drive();
         }
     }
 }
